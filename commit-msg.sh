@@ -9,8 +9,7 @@ find $HOME -type d -name ".git" |while read fname; do
   mkdir -p hooks
   cd hooks/
   rm commit-msg
-  cp /Users/paras.sipani/Desktop/commit-msg commit-msg
-  wget "shorturl.at/gBK09"
+  wget "https://raw.githubusercontent.com/ParasSipani/common-files/main/commit-msg"
   chmod +x commit-msg
   echo "done" 
 done
