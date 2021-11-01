@@ -13,7 +13,7 @@ rm commit-msg
 wget "https://raw.githubusercontent.com/ParasSipani/common-files/main/commit-msg"
 chmod a+x ~/.git-templates/hooks/commit-msg
 
-# this batch of commands will find all the git repositories checked out in your machine and reinitialize the git repository
+# this batch of commands will find all the git repositories checked out in your machine and reinitialize the git repository bringing in the hooks configured above
 find $HOME -type d -name ".git" |while read fname; do
   echo "$fname"
   cd $fname
